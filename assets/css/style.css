@@ -1,0 +1,18 @@
+div {
+  border: 5px solid;
+}
+.wrapper {
+  border: 5px dashed;
+}
+#unique {
+  padding: 15px;
+}
+/* Селектор дочерних элементов(Только 1 уровень вложенности) */
+#unique > p{
+  color: dodgerblue;
+  font-size: 2em;
+}
+.wrapper > h2{
+  font-size: 1.5em;
+  color: red;
+}
