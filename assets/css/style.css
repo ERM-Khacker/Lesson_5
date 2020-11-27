@@ -1,13 +1,7 @@
 div {
   border: 5px solid;
 }
-/* #unique > p {
-  border: 5px solid red;
-} */
-
-#unique p {
-  border: 5px solid red;
-}
-div p{
-  color: green;
+/* Селектор соседних элементов(p after p) */
+p + p {
+  color: red;
 }
