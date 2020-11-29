@@ -1,7 +1,72 @@
-div {
-  border: 5px solid;
+td{--color-odd: #dbdbdb;
 }
-/* Селектор соседних элементов(p after p) */
-p + p {
-  color: red;
+td{
+  --color-even: #ececec;
+}
+td{
+  --color-three: #f3f3f3;
+}
+td{
+  --color-four: #f3f3f3;
+}
+table {
+  text-align: center;
+  border-radius: 1px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead td:first-child {
+  border-top-left-radius: 10px;
+}
+thead td:last-child {
+  border-top-right-radius: 10px;
+}
+tfoot td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tfoot td:last-child {
+  border-bottom-right-radius: 10px;
+}
+button {
+  text-transform: uppercase;
+}
+thead td{
+  font-size: x-large;
+  color: white;
+}
+thead td:first-child{
+  background-color: #7887ab;
+}
+thead td:nth-child(2){
+  background-color: #4f628e;
+}
+thead td:nth-child(3){
+  background-color: #2e4172;
+}
+thead td:nth-child(4){
+  background-color: #162955;
+}
+thead td:nth-child(5){
+  background-color: #061539;
+}
+tbody td:nth-child(odd){
+  background-color: var(--color-odd);
+}
+tbody td:nth-child(even){
+  background-color: var(--color-even);
+}
+tbody td:nth-last-child(){
+background-color: var(--color-three);
+}
+tbody td:nth-last-child(){
+  background-color: var(--color-four);
+}
+tfoot td:nth-child(even){
+  background-color: var(--color-even);
+}
+tfoot td:nth-child(odd){
+  background-color: var(--color-odd);
 }
