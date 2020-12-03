@@ -1,21 +1,17 @@
-td{--color-odd: #dbdbdb;
-}
-td{
+td {
+  --color-odd: #dbdbdb;
   --color-even: #ececec;
-}
-td{
   --color-three: #f3f3f3;
+  padding: 20px;
 }
-td{
-  --color-four: #f3f3f3;
-}
+
 table {
   text-align: center;
   border-radius: 1px;
-  width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 thead td:first-child {
@@ -33,40 +29,39 @@ tfoot td:last-child {
 button {
   text-transform: uppercase;
 }
-thead td{
+thead td {
   font-size: x-large;
   color: white;
 }
-thead td:first-child{
+
+thead td:first-child {
   background-color: #7887ab;
 }
-thead td:nth-child(2){
+thead td:nth-child(2) {
   background-color: #4f628e;
 }
-thead td:nth-child(3){
+thead td:nth-child(3) {
   background-color: #2e4172;
 }
-thead td:nth-child(4){
+thead td:nth-child(4) {
   background-color: #162955;
 }
-thead td:nth-child(5){
+thead td:nth-child(5) {
   background-color: #061539;
 }
-tbody td:nth-child(odd){
+tbody td:nth-child(odd) {
   background-color: var(--color-odd);
 }
-tbody td:nth-child(even){
+tbody td:nth-child(even),
+tr:nth-child(even) > td:nth-child(odd) {
   background-color: var(--color-even);
 }
-tbody td:nth-last-child(){
-background-color: var(--color-three);
+tr:nth-child(even) > td:nth-child(even) {
+  background-color: var(--color-three);
 }
-tbody td:nth-last-child(){
-  background-color: var(--color-four);
-}
-tfoot td:nth-child(even){
+tfoot td:nth-child(even) {
   background-color: var(--color-even);
 }
-tfoot td:nth-child(odd){
+tfoot td:nth-child(odd) {
   background-color: var(--color-odd);
 }
